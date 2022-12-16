@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom/client';
 import reportWebVitals from './reportWebVitals';
 import {RouterProvider, createBrowserRouter} from 'react-router-dom'
 
+import Login from './login'
+
 import './index.css';
 
 const root = ReactDOM.createRoot(
@@ -12,7 +14,11 @@ const root = ReactDOM.createRoot(
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <div>Hello World</div>
+    element: <div>Hello World <br /> <a href='/login'>Login</a></div>
+  },
+  {
+    path: "/login",
+    element: <Login />
   }
 ])
 
