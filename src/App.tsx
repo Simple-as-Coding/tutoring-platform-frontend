@@ -1,10 +1,19 @@
+import {BrowserRouter as  Router, Routes, Route } from 'react-router-dom';
 import './assets/styles/app.css'
+import About from './pages/About';
+import Home from './pages/Home';
+import TermsOfService from './pages/TermsOfService';
 
 function App() {
   return (
-    <div className="App">
-      <h1>Tutoring platform</h1>
-    </div>
+    <Router>
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/home' element={<Home />} />
+        <Route path='/about' element={<About />} />
+        <Route path='/tos' element={<TermsOfService />} />
+      </Routes>
+    </Router>
   );
 }
 
