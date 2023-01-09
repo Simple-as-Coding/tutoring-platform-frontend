@@ -1,0 +1,26 @@
+.Header {
+    background-color: red;
+    text-align: center;
+    font-size: large;
+    display: block;
+    height: 12vh;
+    width: 100%;
+    min-height: 10vh;
+}
+
+.Main {
+    background-color: green;
+    text-align: center;
+    font-size: large;
+    height: 80vh;
+    position: static;
+
+}
+
+.Footer {
+    background-color: red;
+    text-align: center;
+    font-size: large;
+    height: 8vh;
+    display: block;
+}
