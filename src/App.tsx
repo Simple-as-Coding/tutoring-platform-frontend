@@ -3,6 +3,7 @@ import './assets/styles/app.css'
 import About from './pages/About';
 import Home from './pages/Home';
 import TermsOfService from './pages/TermsOfService';
+import Login from './pages/Login';
 
 function App() {
   return (
@@ -11,7 +12,8 @@ function App() {
         <Route path='/' element={<Home />} />
         <Route path='/home' element={<Home />} />
         <Route path='/about' element={<About />} />
-        <Route path='/tos' element={<TermsOfService />} />
+        <Route path='/tos' element={<TermsOfService />} />\
+        <Route path='/login' element={<Login />} />
       </Routes>
     </Router>
   );
