@@ -1,26 +1,132 @@
-.Header {
-    background-color: red;
-    text-align: center;
-    font-size: large;
-    display: block;
+/* NavBar */
+.Navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: purple;
+  height: 8vh;
+  width: 100%;
+  position: fixed;
+}
+.BrandTitle {
+  font-size: 2rem;
+  margin: 1rem;
+}
+.NavbarLinks ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  background-color: purple;
+}
+.NavbarLinks li {
+  list-style: none;
+}
+.NavbarLinks li a {
+  text-decoration: none;
+  color: white;
+  padding: 1rem;
+  display: block;
+  font-size: 1.2rem;
+}
+.NavbarLinks li:hover {
+  background-color: rgb(218, 0, 218);
+}
+.toggleButton {
+  position: absolute;
+  right: 1rem;
+  top: 1.5rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+.toggleButton .Bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+@media (max-width: 492px) {
+  .Navbar {
     height: 12vh;
+  }
+  .toggleButton {
+    display: flex;
+  }
+  .NavbarLinks {
+    display: none;
     width: 100%;
-    min-height: 10vh;
+    margin: 0;
+  }
+  .Navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    z-index: 2;
+  }
+  .NavbarLinks ul {
+    flex-direction: column;
+    width: 100vw;
+  }
+  .NavbarLinks li {
+    text-align: center;
+  }
+  .NavbarLinks li a {
+    padding: 0.5rem 1rem;
+  }
+  .NavbarLinks.active {
+    display: flex;
+  }
 }
 
+/* Main */
 .Main {
-    background-color: green;
-    text-align: center;
-    font-size: large;
-    height: 80vh;
-    position: static;
-
+  background: url("../images/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  font-size: large;
+  height: 82vh;
+  position: static;
+  position: relative;
+  top: 8vh;
+}
+.Main h1 {
+  margin: 0;
+  position: relative;
+  top: 20px;
+  z-index: 1;
+}
+.Main button {
+  font-size: 45px;
+  padding: 5px 20px 10px 20px;
+  position: relative;
+  top: 40px;
+  background: linear-gradient(to top right, rgb(255, 0, 119), rgb(166, 0, 255));
+  border-radius: 10px;
+  border: none;
+  color: white;
+  font-family: "Lato", sans-serif;
+  transition: 0.2s;
+  z-index: 2;
+  border: 2px solid white;
+}
+.Main button:hover {
+  box-shadow: 0 0 20px rgb(255, 0, 199);
 }
 
+/* Footer */
 .Footer {
-    background-color: red;
-    text-align: center;
-    font-size: large;
-    height: 8vh;
-    display: block;
+  background-color: purple;
+  text-align: center;
+  font-size: large;
+  height: 10vh;
+  display: block;
+  position: relative;
+  top: 8vh;
+}
+.Footer span {
+  position: relative;
+  top: 20px;
 }
