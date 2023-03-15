@@ -4,7 +4,10 @@ const Home = () => {
     return(
         <Layout>
             <div>
-                Home
+                <h1>Tutoring Platform</h1>
+                <button>Log in</button>
+
+                <div className="blob"></div>
             </div>
         </Layout>
     )
